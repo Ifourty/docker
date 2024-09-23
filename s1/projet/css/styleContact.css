@@ -1,0 +1,107 @@
+#contact{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 100%;
+    background-color: var(--backgroundColor);
+    z-index: -2;
+}
+
+#titleContact{
+    padding: 0;
+    margin: 0;
+    color: var(--textColor1);
+    font-family: Poppins;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: flex-start;
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#titleContact::after{
+    content: "";
+    position: absolute;
+    width: 15vh;
+    height: 15vh;
+    background-color: rgba(248, 234, 216, 0.58);
+    border-radius: 50%;
+    transform: translate(110vh, 40vh);
+    z-index: 0;
+}
+
+#titleContact::before{
+    content: "";
+    position: absolute;
+    width: 45vh;
+    height: 45vh;
+    background-color: rgba(248, 234, 216, 0.58);
+    border-radius: 50%;
+    transform: translate(50vh, 0vh);
+    z-index: 0;
+}
+
+#titleContact span{
+    padding: 0;
+    margin: 0;
+}
+
+.letterCo{
+    transform: translateX(-20vh);
+    transition: transform 0.5s ease-out, opacity 0.2s ease-out;
+    opacity: 0;
+}
+
+#separatorCo{
+    transform: translateX(20vh);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+#contactFlex{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    width: 80%;
+    margin-left: 10%;
+    justify-content: center;
+}
+
+.contactItem{
+    flex: 1;
+    padding: 2vh;
+    height: 35vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    transition: all 0.5s ease-out;
+    background-image: -webkit-linear-gradient(45deg, var(--cardColor2), transparent);
+    background-color: var(--backgroundColor);
+    color: var(--textColor1);
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.contactItem:hover{
+    background-color: var(--cardColor2);
+    color: var(--backgroundColor);
+    cursor: pointer;
+}
+
+.contactItem > *{
+    flex: 1;
+}
+
+.contactItem:nth-child(odd) {
+    transform: translateY(10vh);
+}
+
+.contactItem:nth-child(even){
+    transform: translateY(-10vh);
+}

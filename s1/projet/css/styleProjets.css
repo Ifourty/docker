@@ -1,0 +1,260 @@
+#projetsContainer{
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+    width: 100%;
+    background-color: var(--backgroundColor);
+    z-index: -2;
+}
+
+#titleProjets{
+    padding: 0;
+    margin: 0;
+    color: var(--textColor1);
+    font-family: Poppins;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: flex-start;
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#titleProjets::after{
+    content: "";
+    position: absolute;
+    width: 15vh;
+    height: 15vh;
+    background-color: rgba(248, 234, 216, 0.288);
+    border-radius: 50%;
+    transform: translate(110vh, 40vh);
+    z-index: 0;
+}
+
+#titleProjets::before{
+    content: "";
+    position: absolute;
+    width: 45vh;
+    height: 45vh;
+    background-color: rgba(248, 234, 216, 0.288);
+    border-radius: 50%;
+    transform: translate(45vh, 70vh);
+    z-index: 0;
+}
+
+#titleProjets span{
+    padding: 0;
+    margin: 0;
+}
+
+.letterP{
+    transform: translateX(-20vh);
+    transition: transform 0.5s ease-out, opacity 0.2s ease-out;
+    opacity: 0;
+}
+
+#separatorP{
+    transform: translateX(20vh);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+#projContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin-left: 10%;
+    height: 150vh;
+    width: 75%;
+    margin-top: 5vh;
+}
+
+#proj1-4Container{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+}
+
+.projet{
+    gap: 2vh;
+    width: 100%;
+    padding: 2vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    transition: background-color 0.5s ease-out, opacity 0.5s ease-out, transform 0.5s ease-out;
+    background-image: radial-gradient(circle at 0px 0px, var(--cardColor), transparent);
+    opacity: 0;
+    text-decoration: none;
+}
+
+
+
+#proj1{
+    flex: 1;
+    margin: 0;
+    transform: translateX(-10vh);
+    display: flex;
+    flex-direction: column;
+}
+
+#projet2-4Container{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 100%;
+    
+}
+
+#projet2-3Container{
+    flex: 1;
+    display: flex;
+    width: calc(100% + 4vh);
+    gap: 2vh;
+}
+
+#proj2{
+    flex: 1;
+    width: 100%;
+    transform: translateX(10vh);
+    display: flex;
+    flex-direction: column;
+}
+#proj3{
+    flex: 1;
+    width: 100%;
+    transform: translateX(10vh);
+    display: flex;
+    flex-direction: column;
+}
+
+#projet4Container{
+    flex: 1;
+}
+#proj4{
+    flex: 1;
+    width: 100%;
+    height: calc(100% - 4vh);
+    transform: translate(10vh,10vh);
+    display: flex;
+}
+
+.projet:hover{
+    background-color: var(--cardColor2);
+    cursor: pointer;
+}
+
+.projetText{
+    flex: 1;
+}
+
+.projetText h2{
+    margin: 0;
+    padding: 0;
+    color: var(--textColor1);
+    transition: color 0.5s ease-out;
+    text-align: center;
+}
+
+.projetText p{
+    color: var(--textColor3);
+    transition: color 0.5s ease-out;
+}
+
+.buttonProjet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    background-color: var(--backgroundColor5);
+    border-radius: 5px;
+    margin-top: 4vh;
+    color: var(--backgroundColor3);
+    transition: background-color 0.5s ease-out;
+}
+
+.imgProjet{
+    border-radius: 10px;
+    width: 40vh;
+    flex: 1;
+    align-self: center;
+}
+.imgProjet2{
+    border-radius: 10px;
+    width: 19vh;
+    height: 19vh;
+    flex: 1;
+    align-self: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.langProjet{
+    display: flex;
+    gap: 1vh;
+    margin-top: 2vh;
+    flex-wrap: wrap;
+}
+
+.langProjet p{
+    padding: 0;
+    margin: 0;
+    padding: 1vh;
+    background-color: var(--cardColor);
+    border-radius: 18px;
+    color: var(--textColor1);
+}
+
+#imgproj2{
+    background-image: url("../public/BlindTestBot.webp");
+}
+
+#imgproj3{
+    background-image: url("../public/gamejava.png");
+    background-size: cover;
+}
+#imgproj6{
+    background-image: url("../public/coursesPhp.webp");
+    background-size: cover;
+}
+
+#proj5-6pContainer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% + 4vh);
+}
+#proj5-6Container{
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    height: 100%;
+}
+
+#futurProject{
+    flex: 1;
+}
+
+#proj5{
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    transform: translate(-10vh,10vh);
+}
+
+#proj6{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    transform: translate(0vh,10vh);
+}
+
+#projetText6{
+    margin-top: -2vh;
+}

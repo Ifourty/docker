@@ -1,0 +1,143 @@
+#propos{
+    height: fit-content;
+    background-color: var(--backgroundColor5);
+    transition: transform 0.2s ease-out;
+}
+
+#proposMainContainer{
+    background-color: var(--backgroundColor);
+    width: 100%;
+    height : 120vh;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -2;
+}
+
+#titlePropos{
+    padding: 0;
+    margin: 0;
+    margin-top: 2vh;
+    color: var(--textColor1);
+    font-family: Poppins;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: flex-start;
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#titlePropos span{
+    padding: 0;
+    margin: 0;
+}
+.letterT{
+    transform: translateX(-20vh);
+    transition: transform 0.5s ease-out, opacity 0.2s ease-out;
+    opacity: 0;
+}
+
+#separatorT{
+    transform: translateX(20vh);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+#propos1st{
+    margin-top: 10vh;
+    display: flex; 
+    z-index: 1;
+}
+
+#propos1st::before{
+    content: "";
+    position: absolute;
+    width: 25vh;
+    height: 25vh;
+    background-color: rgba(248, 234, 216, 0.58);
+    border-radius: 50%;
+    transform: translate(0vh, 15vh);
+    z-index: -1;
+}
+#propos1st::after{
+    content: "";
+    position: absolute;
+    width: 55vh;
+    height: 55vh;
+    background-color: rgba(248, 234, 216, 0.58);
+    border-radius: 50%;
+    transform: translate(10vh, 40vh);
+    z-index: -1;
+}
+
+#propos1st> div{
+    flex : 1;
+    color : var(--textColor1);
+}
+
+#propos1stLeft{
+    display: flex;;
+    align-items: center;
+    justify-content: center;
+}
+.proposTitle{
+    color: var(--textColor1);
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.proposText {
+    color: var(--textColor1);
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    max-width: calc(100% - 20vh);
+}
+
+#proposText * {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    color: var(--textColor2);
+}
+
+#imgEnzo{
+    height: 70vh;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#proposText::after{
+    content: "";
+    position: absolute;
+    width: 50vh;
+    height: 50vh;
+    background-color: rgba(248, 234, 216, 0.58);
+    border-radius: 50%;
+    transform: translate(-15vh, -10vh);
+    z-index: -1;
+}
+
+#proposText::before{
+    content: "";
+    position: absolute;
+    width: 25vh;
+    height: 25vh;
+    background-color: rgba(248, 234, 216, 0.58);
+    border-radius: 50%;
+    transform: translate(25vh, 50vh);
+    z-index: -1;
+}
+
+.highweight{
+    color: rgba(255, 255, 255, 0.816);
+}

@@ -1,0 +1,259 @@
+#competencesContainer{
+    display: flex;
+    flex-direction: column;
+    height: 210vh;
+    width: 100%;
+    background-color: var(--backgroundColor);
+    z-index: -2;
+}
+
+#titleCompetences{
+    padding: 0;
+    margin: 0;
+    margin-right: 10%;
+    margin-top: 2vh;
+    text-align: center;
+    align-self: flex-end;
+    color: var(--textColor1);
+    font-family: Poppins;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-wrap: nowrap;
+}
+#titleCompetences span{
+    padding: 0;
+    margin: 0;
+}
+
+#titleCompetences::after{
+    content: "";
+    position: absolute;
+    width: 15vh;
+    height: 15vh;
+    background-color: rgba(248, 234, 216, 0.288);
+    border-radius: 50%;
+    transform: translate(-45vh, 40vh);
+    z-index: 0;
+}
+
+#titleCompetences::before{
+    content: "";
+    position: absolute;
+    width: 35vh;
+    height: 35vh;
+    background-color: rgba(248, 234, 216, 0.288);
+    border-radius: 50%;
+    transform: translate(-20vh, 50vh);
+    z-index: 0;
+}
+
+.letterC{
+    transform: translateX(20vh);
+    transition: transform 0.5s ease-out, opacity 0.2s ease-out;
+    opacity: 0;
+}
+
+#separatorC{
+    transform: translateX(-20vh);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+#competencesCardContainer{
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    align-self: center;
+    margin-left: 20%;
+}
+
+#hiddenComp{
+    display: none;
+}
+
+#leftComp{
+    flex: 3;
+    width: 80%;
+    align-self: flex-end;
+}
+
+#rightComps{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    margin-right: 10%;
+    align-items: end;
+    width: 100%;
+    margin-right: 20%;
+}
+.choice{
+    flex: 1;
+    gap: 2vh;
+    padding: 2vh;
+    width: 25vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    transition: background-color 0.5s ease-out, opacity 0.5s ease-out, transform 0.5s ease-out;
+    background-image: -webkit-linear-gradient(45deg, var(--cardColor2), transparent);
+    background-color: var(--backgroundColor);
+    color: var(--textColor1);
+    text-decoration: none;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(10vh);
+}
+
+.choice:hover{
+    cursor: pointer;
+    background-color: rgba(95, 89, 82, 0.486);
+    
+}
+
+#choice1{
+    background-image: -webkit-linear-gradient(45deg, rgba(80, 136, 105, 0.522), transparent);
+}
+#choice2{
+    background-image: -webkit-linear-gradient(45deg, rgba(112, 106, 136, 0.522), transparent);
+}
+#choice3{
+    background-image: -webkit-linear-gradient(45deg, rgba(76, 106, 110, 0.522), transparent);
+}
+#choice4{
+    background-image: -webkit-linear-gradient(45deg, rgba(136, 106, 112, 0.522), transparent);
+}
+#choice5{
+    background-image: -webkit-linear-gradient(45deg, rgba(170, 76, 189, 0.522), transparent);
+}
+#choice6{
+    background-image: -webkit-linear-gradient(45deg, rgba(172, 170, 84, 0.522), transparent);
+}
+
+.selected{
+    background-color: rgba(95, 89, 82, 0.486);
+    transform: translateX(-20vh);
+}
+
+#cardComp{
+    width: 100%;
+    min-height: 155vh;
+    padding: 4vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    background-image: radial-gradient(circle at -300vh 0px, var(--cardColor), transparent);
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 1s ease-out, height 1s ease-out;
+}
+
+#cardComp h2{
+    margin: 0;
+    padding: 0;
+    color: var(--textColor1);
+    text-align: center;
+}
+#cardComp h3{
+    color: var(--textColor2);
+    text-align: center;
+}
+#cardComp h4{
+    color: var(--textColor3);
+    text-align: center;
+}
+
+#cardComp li{
+    list-style-type: none;
+    color: var(--textColor4);
+}
+
+#cardComp p{
+    color: var(--textColor4);
+}
+
+.levelContainer{
+    display: flex;
+    gap: 2vh;
+    justify-content: center;
+}
+
+.level{
+    gap: 2vh;
+    padding: 1vh;
+    width: 25vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    transition: background-color 0.5s ease-out, opacity 0.5s ease-out, transform 0.5s ease-out;
+    background-color: var(--backgroundColor);
+    color: var(--textColor1);
+    text-decoration: none;
+    z-index: 5;
+    transition: background-color 0.5s ease-out, transform 0.75s ease-out;
+}
+
+.level1{
+    background-image: -webkit-linear-gradient(45deg, rgba(136, 106, 112, 0.522), transparent);
+}
+.level2{
+    background-image: -webkit-linear-gradient(45deg, rgba(136, 125, 106, 0.522), transparent);
+}
+.level3{
+    background-image: -webkit-linear-gradient(45deg, rgba(112, 136, 106, 0.522), transparent);
+}
+
+.notreach{
+    opacity: 0.2;
+}
+
+.compProjContaner{
+    display: flex;
+    margin: 2vh;
+    gap: 2vh;
+    flex-wrap: wrap;
+}
+.compProjContaner div{
+    padding: 1vh;
+    width: 25vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    transition: background-color 0.5s ease-out, opacity 0.5s ease-out, transform 0.5s ease-out;
+    background-color: var(--backgroundColor);
+    color: var(--textColor1);
+    text-decoration: none;
+    z-index: 5;
+    transition: background-color 0.5s ease-out, transform 0.75s ease-out;
+    background-image: radial-gradient(circle at 90vh 0px, var(--cardColor), transparent);
+}
+
+#cardComp > *{
+    transform: translateX(5vh);
+    opacity: 0;
+    transition: opacity 0.2s ease-out, transform 1s ease-out;
+}
+
+#cardComp::after{
+    content: "";
+    position: absolute;
+    width: 45vh;
+    height: 45vh;
+    background-color: rgba(248, 234, 216, 0.288);
+    border-radius: 50%;
+    transform: translate(70vh, 60vh);
+    z-index: 0;
+}
+
+#cardComp::before{
+    content: "";
+    position: absolute;
+    width: 15vh;
+    height: 15vh;
+    background-color: rgba(248, 234, 216, 0.288);
+    border-radius: 50%;
+    transform: translate(45vh, 120vh);
+    z-index: 0;
+}

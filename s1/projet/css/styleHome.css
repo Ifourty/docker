@@ -1,0 +1,186 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -4;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#home {
+    background-color: var(--backgroundColor5);
+    z-index: -5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 20vh;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0%;
+    z-index: -3;
+}
+
+p {
+    margin: 0;
+    padding: 0
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 7%;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+
+#title {
+    margin-left: 2%;
+    color: #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: all 1s ease-in-out;
+}
+
+#contenuHome {
+    display: flex;
+    z-index: -2;
+}
+#navigation-counterFlex{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2.125rem;
+    position: relative;
+    margin-right: 4%;
+}
+#navigation {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 2.125rem;
+    position: relative;
+
+    /* Ajout d'une position relative pour que les pseudo-éléments s'appliquent correctement */
+}
+
+.navli {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+}
+
+#presentation-container {
+    margin-top: 10vh;
+    width: 100%;
+    flex: 6;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    z-index: -1;
+
+}
+
+#background {
+    width: 34.375rem;
+    height: 34.375rem;
+    flex-shrink: 0;
+    border-radius: 34.375rem;
+    background: linear-gradient(180deg, #374158 0%, rgba(245, 221, 203, 0.08) 72%, rgba(248, 234, 216, 0.00) 100%);
+    transition: all 0.1s ease-out;
+    display: block;
+    position: absolute;
+}
+
+#presentation {
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+#title-presentation {
+    margin-bottom: 5vh;
+}
+
+#title-presentation p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 5.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#name {
+    margin-left: 10vh;
+}
+
+.detail {
+    margin-right: 10vh;
+    align-self: center;
+    color: #474343;
+
+    font-family: Poppins;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#contactMeContainer{
+    height: 91vh;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#contactme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh;
+    background-color: var(--backgroundColor);
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 60px;
+    background-image: radial-gradient(circle at 0px 16vh, var(--cardColor), transparent);
+    color: var(--textColor1);
+    animation : wiggle 3s infinite;
+    text-align: center;
+    width: 15vh;
+    height: 15vh;
+    transition: all 0.5s ease-out;
+}
+
+#contactme p{
+    padding: 0;
+    margin: 0;
+}
+
+#contactme:hover{
+    cursor: pointer;
+    width: 16vh;
+    height: 16vh;
+    font-size: 1.1rem;
+    color: #ffffff;
+    background-color: var(--backgroundColor4);
+    font-weight: 500;
+}
